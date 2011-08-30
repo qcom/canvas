@@ -16,6 +16,10 @@ $(document).ready(function(){
 	  draw(data.x, data.y, data.type);
   });
 
+  socket.on('alert', function(){
+	  alert('lol alert');
+  });
+
   function draw(x, y, type){
 	  if (type === 'dragstart'){
 		  ctx.beginPath();

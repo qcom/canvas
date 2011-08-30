@@ -45,6 +45,7 @@ io.sockets.on('connection', function(socket){
 			type: data.type
 		});
 	});
+	socket.emit('alert');
 });
 
 // Listen
