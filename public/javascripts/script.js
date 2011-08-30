@@ -33,8 +33,8 @@ $(document).ready(function(){
   $('#canvas').live('drag dragstar dragend', function(e){
 	  var type = e.handleObj.type;
 	  var offset = $(this).offset();
-	  var e.offsetX = e.layerX - offset.left;
-	  var e.offsetY = e.layerY - offset.top;
+	  e.offsetX = e.layerX - offset.left;
+	  e.offsetY = e.layerY - offset.top;
 	  var x = e.offsetX;
 	  var y = e.offsetY;	
 	  draw(x, y, type);
