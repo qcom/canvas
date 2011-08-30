@@ -34,7 +34,7 @@ $(document).ready(function(){
 	  var type = e.handleObj.type;
 	  var offset = $(this).offset();
 	  var e.offsetX = e.layerX - offset.left;
-	  var.offsetY = e.layerY - offset.top;
+	  var e.offsetY = e.layerY - offset.top;
 	  var x = e.offsetX;
 	  var y = e.offsetY;	
 	  draw(x, y, type);
