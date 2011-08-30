@@ -37,10 +37,9 @@
   	Init 
   */
   App.init = function() {
-    App.canvas = document.createElement('canvas');
+    App.canvas = document.getElementById('canvas');
     App.canvas.height = 400;
     App.canvas.width = 800;
-    document.getElementsByTagName('article')[0].appendChild(App.canvas);
     App.ctx = App.canvas.getContext("2d");
     App.ctx.fillStyle = "solid";
     App.ctx.strokeStyle = "#ECD018";
