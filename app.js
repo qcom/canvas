@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 
 // Socket.IO
 
-var io = sio.listen(app);
+var io = sio.listen(9980);
 
 io.sockets.on('connection', function(socket){
 	socket.on('drawClick', function(data){
